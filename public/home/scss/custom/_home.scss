@@ -1,0 +1,24 @@
+// Home Styles
+// 
+
+
+#home-header {
+	width: 100%;
+	background-image: url('http://placehold.it/728x90.png') no-repeat;
+	.headerNavigation {
+		@include outer-container(1920px);
+		nav {
+			@include span-columns(12);
+		}
+	}
+	nav {
+		ul {
+			@include span-columns(4);
+			@include shift(4);
+			li {
+				display: inline-block;
+				text-align: center;
+			}
+		}
+	}
+}
